@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CGPA Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CGPA Calculator</h1>
+        </header>
+        <main>
+            <form id="courseForm">
+                <div id="courses">
+                    <!-- Course input fields  -->
+                </div>
+               
+                <button type="button" onclick="addCourse()">Add Course</button>
+                <button type="button" onclick="removeCourse()">Remove Course</button>
+                <button type="button" onclick="calculateCGPA()">Calculate CGPA</button>
+                <button type="button" onclick="resetForm()">Reset</button>
+            </form>
+            <div id="result">
+                <h2>Calculated CGPA:</h2>
+                <p id="cgpa">0.00</p>
+                <div class="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
